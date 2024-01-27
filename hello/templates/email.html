@@ -1,0 +1,24 @@
+<html>
+    
+    
+        <body>
+           <p> back to <a href ="/intro"> intro</a> </p> 
+           <p>here is the conatact list to join us <a href = "/contacts"> contacts</a> </p>
+            
+            <p>my hobbies are travelling </p>
+            <!-- {{member_list}} -->   <!--iis se html me comment hota hai -->
+            <h1>{{mymember.firstname}} {{mymember.lastname}}    
+                {{mymember.phoneno}}   
+            </h1>
+            
+
+        <h2>{% for i in member_list %}
+        <h3> 
+            {{i.id}}{{i.lastname}} {{i.rollno}}
+        </h3>
+
+            {% endfor %}
+         </h2>
+        </body>
+    
+</html>
